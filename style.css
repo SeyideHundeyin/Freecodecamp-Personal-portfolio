@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* header section */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #92E3A9;
+    min-height: 70px;
+    padding: 0px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    text-decoration: none;
+    font-size: 3.5vh;
+    color: black;
+    font-family: 'Satisfy', cursive;
+    font-weight: 600;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: poppins;
+    margin: 1rem;
+}
+
+@media (max-width: 460px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    #logo {
+        margin-top: 1rem;
+    }
+}
+
+
+/*Welcome section*/
+
+main {
+    padding-top: 10rem;
+}
+
+#welcome-section {
+    height: 100vh;
+    margin-bottom: 120px !important;
+}
+
+#welcome-sect {
+    font-family: roboto;
+    color: #141c3a;
+    font-weight: 800;
+    text-align: center;
+    font-size: 3rem;
+    word-break: normal;
+}
+
+h2 {
+    color: rgba(10, 10, 10, 0.9);
+    font-weight: 300;
+    line-height: 1.5;
+    word-break: break-word;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#seyide {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 460px) {
+    #welcome-sect {
+        font-size: 4vh;
+        max-width: 700px;
+        width: 100%;
+    }
+    h2 {
+        font-size: 3vh;
+        max-width: 400px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/*portfolio section*/
+
+#portfolio {
+    padding: 3.5em;
+    display: block;
+    background-color: #92E3A9;
+    max-width: 1550px;
+    width: 100%;
+}
+
+.projects-section-header {
+    font-family: roboto;
+    color: #141c3a;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2rem;
+    word-break: normal;
+    margin-bottom: 3rem;
+}
+
+.image {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+}
+
+#profile-link,
+#profile {
+    text-decoration: none;
+    color: black;
+    font-size: 3vh;
+}
+
+.project-tile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .project-tile,
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-content: center !important;
+        margin-bottom: 2rem;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.5vh;
+}
